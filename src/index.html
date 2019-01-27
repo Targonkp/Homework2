@@ -6,7 +6,7 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Задание</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 <section class="main">
@@ -14,14 +14,17 @@
 
 <div class="calculyator">
 <p style="color: green; font-size: 2em">Калькулятор</p>
-<p style="color: Olive; font-size: 1em">Для справки:</p>
-<p>Введите высоту стен: <input type="" id="height"></p>
-<p>Введите длину периметра: <input type="" id="perimeter"></p>
+<p style="color: Olive; font-size: 1em">Для справки: стандартная длина рулона составляет 10 м.</p>
+<p>Введите высоту стен в метрах: <input type="" id="height"></p>
+<p>Введите длину периметра в метрах: <input type="" id="perimeter"></p>
+	<p>Введите ширину рулона в метрах (пример:0.5): <input type="" id="width"></p>
 <button id="button">Рассчитать количество рулонов</button>
  <p>Результат: <span id="result">.</span></p></div>
 </section>
 
 
-<script src="src/js/rolls.js" type="module"></script>
+<script src="js/rolls.js" type="module"></script>
+<script src="js/lib.js" type="module"></script>
+
 </body>
 </html>
