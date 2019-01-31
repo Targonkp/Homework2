@@ -1,20 +1,22 @@
- const action = document.getElementById('button');
+import {numberOfRolls} from "./lib.js"
+
+const action = document.getElementById('button');
 const resultE = document.getElementById('result');
- const heightE = document.getElementById('height');
- const perimeterE = document.getElementById('perimeter');
+const heightE = document.getElementById('height');
+const perimeterE = document.getElementById('perimeter');
+const widthE = document.getElementById('width');
 
-export function NumberOfRolls (height, perimeter) {
-    const roll = 0.5 * 10; //ширина рулона равна 0,5 м, а длина - 10 м, вычисляем общую площадь рулона
-    const sum = height*perimeter/roll;//вычисляем общую площадь поверхности и делим на площадь рулона;
-    resultE.textContent = Math.ceil(sum) + ' рулонов.';
-    resultE.style.color = 'red';
 
+function clickOnbutton () {
+  const heightEl = parseInt(heightE.value);
+  const perimeterEl = parseInt(perimeterE.value);
+  const widthEl = parseFloat(widthE.value);
+    return resultE.textContent=numberOfRolls(heightEl, perimeterEl, widthEl);
 }
- action.addEventListener(
-     'click',
-     function (){NumberOfRolls (parseInt(heightE.value), parseInt(perimeterE.value))}
 
-)
+
+
+ action.addEventListener('click', clickOnbutton);
 
 
 
