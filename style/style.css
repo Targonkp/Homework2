@@ -1,0 +1,45 @@
+html {
+	margin:0px;
+}
+
+body {
+	background: #FFEFD5;
+}
+
+.main {
+	
+	height: 700px;
+	margin: 100px;
+border: 5px double #000080;
+background: #F5DEB3;
+padding-top:50px;
+position: relative;
+
+}
+
+.calculyator {
+	width: 300px;
+	height: 300px;
+position: absolute;
+top:40%;
+left:50%;
+margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+	
+    }
+	
+
+
+input {
+	height:18px;
+	width:200px;
+	color:green;
+}
+
+button {
+	height: 40px;
+	width:200px;
+	background: linear-gradient(to left, #fefcea, #f1da36);
+
+}
